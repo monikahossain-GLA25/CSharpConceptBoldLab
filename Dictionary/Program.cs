@@ -13,6 +13,9 @@ namespace CSharpConceptBoldLab.Dictionary
 
             Dictionary2 obj2 = new Dictionary2();
             obj2.Run();
+
+            phonebook obj3 = new phonebook();
+            obj3.Run();
         }
     }
 }
