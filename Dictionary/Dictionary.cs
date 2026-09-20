@@ -40,11 +40,6 @@ namespace CSharpConceptBoldLab.Dictionary
 
 
         }
-        public static void Main(string[] args)
-        {
-            Dictionary obj = new Dictionary();
-            obj.RUN();
-
-        }
+        
     }
 }
