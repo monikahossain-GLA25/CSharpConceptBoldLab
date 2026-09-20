@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CSharpConceptBoldLab": {
+      "commandName": "Project"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker"
+    }
+  }
+}
