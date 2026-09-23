@@ -29,6 +29,15 @@ namespace CSharpConceptBoldLab.Generic
             //for multiple 
             MBox<string, int> objMBox = new MBox<string, int>("nAZAAA", 12);
             objMBox.Display();
+
+            //Logger
+            Logger objLogger = new Logger();
+            objLogger.Log<int>(10);
+            objLogger.Log<string>("Salsa");
+            objLogger.Log(new { Name = "Monika", Age = 28 });
+
+
+
         }
     }
 }
