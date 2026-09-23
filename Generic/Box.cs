@@ -13,6 +13,7 @@ namespace CSharpConceptBoldLab.Generic
             return $"Box contains: {content}";
         }
 
-        
+      
+
     }
 }

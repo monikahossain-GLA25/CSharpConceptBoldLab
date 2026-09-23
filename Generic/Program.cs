@@ -16,6 +16,19 @@ namespace CSharpConceptBoldLab.Generic
             Box<string> strBox = new Box<string>();
             strBox.content = "Monik Hossain`";
             Console.WriteLine(strBox.Log());
+
+            Box2<int> objBox2 = new Box2<int>(42);
+            Console.WriteLine($"Content: {objBox2.getContent()}");
+
+
+            //For Student class
+            Student<string> objString = new Student<string>("Monika Robi");
+
+            Student<int> objInt = new Student<int>(12345);
+
+            //for multiple 
+            MBox<string, int> objMBox = new MBox<string, int>("nAZAAA", 12);
+            objMBox.Display();
         }
     }
 }
