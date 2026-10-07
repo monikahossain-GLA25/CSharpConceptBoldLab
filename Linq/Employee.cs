@@ -83,6 +83,12 @@ namespace CSharpConceptBoldLab.Linq
             }
 
             //Sort employees by Salary highest to lowest.If two employees have the same salary, sort them by Name alphabetically.
+            var empName = emp.OrderByDescending(e => e.Salary).OrderBy(e => e.Name).ToList();
+            foreach (var employee in empName)
+            {
+                Console.WriteLine($"Name: {employee.Name}, Job: {employee.Job}, Salary: {employee.Salary}");
+            }
+            //
 
         }
     }
