@@ -88,8 +88,17 @@ namespace CSharpConceptBoldLab.Linq
             {
                 Console.WriteLine($"Name: {employee.Name}, Job: {employee.Job}, Salary: {employee.Salary}");
             }
-            //
+            //Find the employee whose Id is 3.
+            var empID = emp.Find(e => e.Id == 3);
 
-        }
+            if (empID != null)
+            {
+                Console.WriteLine($"Id: {empID.Id}, Name: {empID.Name}, Job: {empID.Job}, City: {empID.City}, Salary: {empID.Salary}, Age: {empID.Age}");
+            }
+            else
+            {
+                Console.WriteLine("Employee with Id 3 not found.");
+
+            }
     }
 }
