@@ -11,8 +11,14 @@
 
   <ItemGroup>
     <Compile Remove="Dictionary\**" />
+    <Compile Remove="Generic\**" />
+    <Compile Remove="Linq\**" />
     <EmbeddedResource Remove="Dictionary\**" />
+    <EmbeddedResource Remove="Generic\**" />
+    <EmbeddedResource Remove="Linq\**" />
     <None Remove="Dictionary\**" />
+    <None Remove="Generic\**" />
+    <None Remove="Linq\**" />
   </ItemGroup>
 
   <ItemGroup>

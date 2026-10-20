@@ -64,7 +64,7 @@ namespace CSharpConceptBoldLab.Linq
             }
         };
             //Find all employees who live in Dhaka and have a salary of 50,000 or more.
-            var  empDhk = emp.Where(e => e.City=="Dhaka" && e.Salary >= 50000).ToList();
+            var empDhk = emp.Where(e => e.City == "Dhaka" && e.Salary >= 50000).ToList();
             foreach (var employee in empDhk)
             {
                 Console.WriteLine($"Id: {employee.Id}, Name: {employee.Name}, Job: {employee.Job}, City: {employee.City}, Salary: {employee.Salary}, Age: {employee.Age}");
@@ -100,5 +100,8 @@ namespace CSharpConceptBoldLab.Linq
                 Console.WriteLine("Employee with Id 3 not found.");
 
             }
+
+            //
+        }
     }
 }
