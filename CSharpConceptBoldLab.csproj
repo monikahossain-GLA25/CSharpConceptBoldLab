@@ -13,12 +13,19 @@
     <Compile Remove="Dictionary\**" />
     <Compile Remove="Generic\**" />
     <Compile Remove="Linq\**" />
+    <Compile Remove="Struct\**" />
     <EmbeddedResource Remove="Dictionary\**" />
     <EmbeddedResource Remove="Generic\**" />
     <EmbeddedResource Remove="Linq\**" />
+    <EmbeddedResource Remove="Struct\**" />
     <None Remove="Dictionary\**" />
     <None Remove="Generic\**" />
     <None Remove="Linq\**" />
+    <None Remove="Struct\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Polymorphism\Parent.cs" />
   </ItemGroup>
 
   <ItemGroup>
