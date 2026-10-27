@@ -11,6 +11,10 @@ namespace CSharpConceptBoldLab.Polymorphism
             Console.WriteLine("Processing general payment.");
 
         }
+        public virtual void PrintReceipt()
+        {
+            Console.WriteLine("Payment receipt");
+        }
     }
     public class CashPayment : Payment
     {
@@ -18,8 +22,17 @@ namespace CSharpConceptBoldLab.Polymorphism
         {
             Console.WriteLine("Cash payment processed.");
         }
-    }
 
+        
+    }
+    public class CardPayment : Payment
+    {
+        public override void PrintReceipt()
+        {
+            base.PrintReceipt();
+            Console.WriteLine("Payment method: Card");
+        }
+    }
     public class Program
     {
         public static void Main(string[] args)
@@ -32,6 +45,10 @@ namespace CSharpConceptBoldLab.Polymorphism
 
             Payment obj = new CashPayment();
             obj.ProcessPayment();
+
+            CardPayment card = new CardPayment();
+            card.PrintReceipt();
+
         }
     }
 
